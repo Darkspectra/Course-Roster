@@ -1,14 +1,36 @@
 
+import { useState } from 'react'
 import './App.css'
+import CourseList from './Components/CourseList/CourseList'
 import Courses from './Components/Courses/Courses'
 
+import {toast} from 'react-toastify';
+
 function App() {
+  const [courseList, setCourseList] = useState([])
+  const [hour, setHour] = useState(0)
+
+  const handleCourseList = (course, number) => {
+    const newCourseList = [...courseList, course]
+    setCourseList(newCourseList)
+
+    let updatedHour = hour + number;
+
+    if (20-updatedHour<0){
+      toast("Out of Credit")
+      // setHour(0)
+    }
+    else{
+      setHour(updatedHour);
+    }
+  }
 
   return (
     <>
       <h1 className='text-3xl font-bold text-center my-14'>Course Registration</h1>
-      <div>
-        <Courses></Courses>
+      <div className='flex ml-20'>
+        <Courses handleCourseList={handleCourseList} ></Courses>
+        <CourseList courseList={courseList} hour={hour}></CourseList>
       </div>
     </>
   )

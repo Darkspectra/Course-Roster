@@ -1,7 +1,18 @@
 import PropTypes from 'prop-types';
 import { FaDollarSign, FaBookOpen } from 'react-icons/fa';
-const Course = ({ course }) => {
+const Course = ({ course, handleCourseList }) => {
     const { course_name, image, course_details, price, credit } = course
+
+    
+    let str = '';
+    for (let i = 0; i < credit.length; i++) {
+        if (!isNaN(parseInt(credit[i]))) {
+            str += credit[i];
+        }
+    }
+
+    let number = parseInt(str);
+
     return (
         <div>
             <div className='max-w-[312px] bg-gray-200 rounded-2xl items-center text-center my-8 py-4'>
@@ -16,7 +27,7 @@ const Course = ({ course }) => {
                     <p><FaBookOpen></FaBookOpen></p>
                     <p>Credit: {credit}</p>
                 </div>
-                <button className="btn btn-primary text-white w-[80%] bg-blue-800">Select</button>
+                <button onClick={()=> handleCourseList(course, number)} className="btn btn-primary text-white w-[80%] bg-blue-800 rounded-lg">Select</button>
             </div>
         </div>
     );
@@ -24,6 +35,7 @@ const Course = ({ course }) => {
 
 Course.propTypes = {
     course: PropTypes.object.isRequired,
+    handleCourseList: PropTypes.object.isRequired
 }
 
 export default Course;
