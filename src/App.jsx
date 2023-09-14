@@ -4,8 +4,6 @@ import './App.css'
 import CourseList from './Components/CourseList/CourseList'
 import Courses from './Components/Courses/Courses'
 
-import {toast} from 'react-toastify';
-
 function App() {
   const [courseList, setCourseList] = useState([])
   const [hour, setHour] = useState(0)
@@ -17,8 +15,7 @@ function App() {
     let updatedHour = hour + number;
 
     if (20-updatedHour<0){
-      toast("Out of Credit")
-      // setHour(0)
+      alert("Out of Credit !!");
     }
     else{
       setHour(updatedHour);
