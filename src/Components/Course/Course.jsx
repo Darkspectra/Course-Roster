@@ -3,7 +3,6 @@ import { FaDollarSign, FaBookOpen } from 'react-icons/fa';
 const Course = ({ course, handleCourseList }) => {
     const { course_name, image, course_details, price, credit } = course
 
-    
     let str = '';
     for (let i = 0; i < credit.length; i++) {
         if (!isNaN(parseInt(credit[i]))) {
@@ -27,7 +26,7 @@ const Course = ({ course, handleCourseList }) => {
                     <p><FaBookOpen></FaBookOpen></p>
                     <p>Credit: {credit}</p>
                 </div>
-                <button onClick={()=> handleCourseList(course, number)} className="btn btn-primary text-white w-[80%] bg-blue-800 rounded-lg">Select</button>
+                <button onClick={()=> handleCourseList(course, number, course_name)} className="btn btn-primary text-white w-[80%] bg-blue-800 rounded-lg">Select</button>
             </div>
         </div>
     );

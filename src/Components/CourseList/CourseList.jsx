@@ -7,7 +7,7 @@ const CourseList = ({ courseList, hour }) => {
             <hr />
             <h1 className='font-bold text-xl'>Course Name</h1>
             {
-                courseList.map((course, idx) => <CourseDisplay key={idx} hour={hour} course={course}></CourseDisplay>)
+                courseList.map((course, idx) => <CourseDisplay key={idx} course={course}></CourseDisplay>)
             }
             <div>
                 <hr />

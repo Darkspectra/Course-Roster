@@ -8,9 +8,12 @@ function App() {
   const [courseList, setCourseList] = useState([])
   const [hour, setHour] = useState(0)
 
-  const handleCourseList = (course, number) => {
-    const newCourseList = [...courseList, course]
+  const handleCourseList = (course, number, name) => {
+    const remainingCourses = courseList.filter(course => course.course_name!=name)
+    const newCourseList = [...remainingCourses, course]
     setCourseList(newCourseList)
+
+    // const price = courseList
 
     let updatedHour = hour + number;
 
