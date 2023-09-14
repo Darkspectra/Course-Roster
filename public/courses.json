@@ -1,0 +1,66 @@
+[
+    {
+        "course_name": "Introduction to C Programming",
+        "course_details": "C is a powerful and widely-used programming language known for its efficiency, flexibility, and versatility.",
+        "image": "https://i.ibb.co/Gs02kv4/Rectangle-2-2.png",
+        "credit": "1hr",
+        "price": 15000
+      },
+    {
+        "course_name": "Introduction to Algorithms",
+        "course_details": "An algorithm is a step-by-step procedure or formula for solving a problem or accomplishing a task.",
+        "image": "https://i.ibb.co/YWrSghP/Rectangle-2-3.png",
+        "credit": "2hr",
+        "price": 25000
+      },
+    {
+        "course_name": "Introduction to C++ for DSA",
+        "course_details": "C++ is a powerful programming language that combines the features of both procedural and OOP.",
+        "image": "https://i.ibb.co/KmqTJdJ/Rectangle-2-4.png",
+        "credit": "10hr",
+        "price": 10000
+      },
+    {
+        "course_name": "Basic Data Structures",
+        "course_details": "Data structures are fundamental concepts in computer science that allow us to organize and store data.",
+        "image": "https://i.ibb.co/YPWVhzh/Rectangle-3.png",
+        "credit": "5hr",
+        "price": 35000
+      },
+    {
+        "course_name": "Introduction to OOP Python",
+        "course_details": "Python is an object-oriented programming language that supports the creation and manipulation.",
+        "image": "https://i.ibb.co/wLKdrsZ/Rectangle-2.png",
+        "credit": "5hr",
+        "price": 19000
+      },
+    {
+        "course_name": "Software Engineering",
+        "course_details": "Software Engineering is a systematic approach to designing, developing, testing, and maintaining software.",
+        "image": "https://i.ibb.co/NTqDfxn/Rectangle-2-5.png",
+        "credit": "2hr",
+        "price": 23000
+      },
+    {
+        "course_name": "AWS, Cloud Computing",
+        "course_details": "Cloud computing is a technology that allows individuals and organizations to access and use computing.",
+        "image": "https://i.ibb.co/kMBhJqN/Rectangle-3-1.png",
+        "credit": "5hr",
+        "price": 35000
+      },
+    {
+        "course_name": "Database (MySQL)",
+        "course_details": "MySQL is an open-source, widely-used relational database management system (RDBMS).",
+        "image": "https://i.ibb.co/5BF0Gn6/Rectangle-2-1.png",
+        "credit": "5hr",
+        "price": 19000
+      },
+    {
+        "course_name": "Problem-Solving Part",
+        "course_details": "Problem-solving is a fundamental skill in computer science that involves the ability to analyze.",
+        "image": "https://i.ibb.co/XF01Pfm/Rectangle-2-6.png",
+        "credit": "2hr",
+        "price": 23000
+      }
+      
+]
